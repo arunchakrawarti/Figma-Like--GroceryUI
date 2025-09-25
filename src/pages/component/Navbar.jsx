@@ -1,16 +1,15 @@
 "use client";
 import { useState } from "react";
-import { Search, ShoppingCart, User, Menu, X } from "lucide-react";
+import { Search, ShoppingCart, Menu, X } from "lucide-react";
 import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full  bg-white font-sans  py-6 shadow">
-      <div className="max-w-[1320px] mx-auto flex  items-center justify-between px-4 md:px-0">
-        
-        {/* Left Logo */}
+    <nav className="w-full fixed top-0 left-0 z-50 bg-white py-6 shadow">
+      <div className="max-w-[1320px] mx-auto flex items-center justify-between px-4 md:px-0">
+        {/* Logo */}
         <div className="text-4xl md:text-4xl font-extrabold">SHOP.CO</div>
 
         {/* Desktop Nav */}
@@ -39,7 +38,7 @@ export default function Navbar() {
             <input
               type="text"
               placeholder="Search for products..."
-              className="bg-transparent outline-none text-md py-1 w-full  text-gray-500 placeholder-gray-400"
+              className="bg-transparent outline-none text-md py-1 w-full text-gray-500 placeholder-gray-400"
             />
           </div>
         </div>
@@ -48,17 +47,20 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <ShoppingCart className="w-6 h-6 cursor-pointer" />
           <Image
-          src="/img/Userimg.png"
-          height={25}
-          className="text-black"
-          width={25}
-          alt="Userimg.png"
+            src="/img/Userimg.png"
+            height={25}
+            width={25}
+            alt="Userimg.png"
+            className="text-black"
           />
-          
+          {/* Mobile Menu Toggle */}
+          <div className="md:hidden cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </div>
         </div>
       </div>
 
-     
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden flex flex-col items-start px-4 mt-3 space-y-3 text-gray-700">
           <span className="cursor-pointer text-[17px]">Shop</span>
@@ -70,7 +72,5 @@ export default function Navbar() {
     </nav>
   );
 }
-
-
 
 

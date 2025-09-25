@@ -61,7 +61,7 @@ const Your = () => {
   const total = subtotal - discount + deliveryFee;
 
   return (
-    <div className="container w-[85%]  mx-auto p-4 md:p-8 font-sans">
+    <div className="container mt-10 w-[85%]  mx-auto p-4 md:p-8 font-sans">
       <div className="flex  text-sm text-gray-500 mb-6">
         <p className="hover:underline cursor-pointer">Home</p>
         <p className="mx-2">/</p>

@@ -33,7 +33,7 @@ const Home = () => {
   const colors = ["#5A4A2B", "#1F3D3A", "#26264F"];
 
   return (
-    <div className="px-4  md:px-10 lg:px-20">
+    <div className="px-4 mt-35 md:px-10 lg:px-20">
      
       <div className="flex flex-wrap gap-3 md:gap-5 mt-5 text-gray-600 text-sm md:text-base">
         <p>Home</p>
