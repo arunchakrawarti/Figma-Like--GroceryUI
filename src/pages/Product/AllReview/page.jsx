@@ -1,5 +1,5 @@
 "use client";
-import CustomerCard from "@/commponents/Moolecules/CustomerCard";
+import Allreviwer from "@/commponents/Moolecules/Allreviwer";
 import React, { useState } from "react";
 import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
 
@@ -16,7 +16,7 @@ import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
      ),
      name: "Satah M.",
      review:
-       "I'm blown away by the quality and style style used to be a of the clothes I received from Shop.co...",
+       "I'm blown delivery was fast, and the clothes away by the quality and style style used to be a of the clothes I received from Shop.co...",
    },
    {
      star: (
@@ -30,7 +30,7 @@ import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
      ),
      name: "Alex K.",
      review:
-       "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co...",
+       "Finding delivery was fast, and the clothes clothes that align with my personal style used to be a challenge until I discovered Shop.co...",
    },
    {
      star: (
@@ -44,7 +44,7 @@ import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
      ),
      name: "Mohan k.",
      review:
-       "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co...",
+       "As someone delivery was fast, and the clothes who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co...",
    },
    {
      star: (
@@ -58,7 +58,7 @@ import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
      ),
      name: "Umesh l.",
      review:
-       "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co...",
+       "As someone who's always on the lookout for delivery was fast, and the clothes unique fashion pieces, I'm thrilled to have stumbled upon Shop.co...",
    },
    {
      star: (
@@ -72,7 +72,7 @@ import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
      ),
      name: "David W.",
      review:
-       "Fantastic experience with Shop.co. The delivery was fast, and the clothes were exactly as described...",
+       "Fantastic experience with Shop.co. The delivery delivery was fast, and the clothes was fast, and the clothes were exactly as described...",
    },
    {
      star: (
@@ -86,7 +86,7 @@ import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
      ),
      name: "David W.",
      review:
-       "Fantastic experience with Shop.co. The delivery was fast, and the clothes were exactly as described...",
+       "Fantastic experience with Shop.co. The delivery was fast, and the clothes were exactly delivery was fast, and the clothes as described...",
 },];
 
 const Allreview = () => {
@@ -116,15 +116,17 @@ const Allreview = () => {
           <div className="flex justify-between items-center mt-6 mb-6 flex-wrap">
             <div className="font-semibold">ALL Reviews (451)</div>
             <div className="flex space-x-4 mt-2 sm:mt-0">
-              <div className="cursor-pointer text-gray-500 hover:text-black px-2 py-2">#</div>
-              <div className="cursor-pointer text-gray-500 hover:text-black px-2 py-2">Latest</div>
-              <div className="cursor-pointer text-gray-500 hover:text-white  bg-black rounded-3xl px-2 py-2">Write a Review</div>
+              <div className="cursor-pointer text-gray-500  bg-gray-300 rounded-4xl px-5 py-3">#</div>
+              <div className="cursor-pointer text-gray-500 bg-gray-300 rounded-3xl px-3 py-3">Latest</div>
+              <div className="cursor-pointer text-white bg-black rounded-3xl px-4 py-3">Write a Review</div>
             </div>
           </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6 justify-center px-5">
+
+<div className="grid grid-cols-1 lg:grid-cols-2 px-0 max-w-full mx-auto 
+                gap-x-[5px] gap-y-[5px]">
   {customers.map((item, i) => (
-    <CustomerCard
+    <Allreviwer
       key={i}
       star={item.star}
       name={item.name}
@@ -136,7 +138,9 @@ const Allreview = () => {
 
 
 
-        </>
+
+
+</>
       )}
 
      
@@ -152,7 +156,7 @@ const Allreview = () => {
         </div>
       )}
       <div className="text-center">
-        <button className=" text-2xl bg-gray-200 px-3 text-gray-500 py-2 rounded-3xl mt-20">Load More Reviews</button>
+        <button className=" text-xl border border-gray-200 px-5 text-gray-500 py-3 rounded-3xl mt-20">Load More Reviews</button>
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ const Home = () => {
   const colors = ["#5A4A2B", "#1F3D3A", "#26264F"];
 
   return (
-    <div className="px-4 pt-25 md:px-10 lg:px-20">
+    <div className="px-4  md:px-10 lg:px-20">
      
       <div className="flex flex-wrap gap-3 md:gap-5 mt-5 text-gray-600 text-sm md:text-base">
         <p>Home</p>
@@ -59,7 +59,7 @@ const Home = () => {
 
         
         <div className="flex justify-center lg:justify-start">
-          <Image src="/img/image1.png" height={530} width={444} alt="image1.png" />
+          <Image src="/img/Productimg.png" height={530} width={444} alt="Productimg.png" />
         </div>
 
        
@@ -125,7 +125,7 @@ const Home = () => {
               </button>
             </div>
             <Link href="/YourCart">
-            <button className="bg-black w-full sm:w-[400px] py-2 rounded-2xl text-white">
+            <button className="bg-black w-full sm:w-[400px] py-4 rounded-2xl text-white">
               Add to cart
             </button>
             </Link>

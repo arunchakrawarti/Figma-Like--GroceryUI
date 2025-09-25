@@ -6,10 +6,8 @@ import React from 'react'
 const Categorypage = () => {
   return (
     <div>
-      <Navbar/>
       <Casual/>
-      <Footar/>
-    </div>
+      </div>
   )
 }
 

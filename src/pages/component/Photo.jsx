@@ -2,7 +2,7 @@ import React from "react";
 
 const Photo = () => {
   return (
-    <div className="relative  w-full overflow-hidden min-h-[65%] font-sans">
+    <div className="relative w-full overflow-hidden min-h-[65%] font-sans">
     
       <img
         src="/img/Rectangle.png"
@@ -28,7 +28,7 @@ const Photo = () => {
       />
       <div className="relative z-10 w-full h-full flex flex-col md:flex-row p-4 md:p-12 lg:p-24">
         
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+        <div className="w-full  md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           
           {/* Main Heading */}
           <h1 className="font-integral font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-[68px] leading-tight md:leading-[69px] tracking-tight font-weight: 900 md:tracking-[-2px] text-black">

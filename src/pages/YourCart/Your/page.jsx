@@ -61,8 +61,8 @@ const Your = () => {
   const total = subtotal - discount + deliveryFee;
 
   return (
-    <div className="container w-[85%]  mx-auto pt-10  p-4 md:p-8 font-sans">
-      <div className="flex pt-25 text-sm text-gray-500 mb-6">
+    <div className="container w-[85%]  mx-auto p-4 md:p-8 font-sans">
+      <div className="flex  text-sm text-gray-500 mb-6">
         <p className="hover:underline cursor-pointer">Home</p>
         <p className="mx-2">/</p>
         <p className="font-semibold text-black">Cart</p>
@@ -71,11 +71,11 @@ const Your = () => {
       <h1 className="font-extrabold text-5xl mb-8">YOUR CART</h1>
 
       <div className="flex flex-col lg:flex-row gap-8">
-        <div className="w-full lg:w-2/3 space-y-6">
+        <div className="w-full border border-gray-200 rounded-lg lg:w-2/3 space-y-6">
           {cartItemsState.map((item) => (
             <div
               key={item.id}
-              className="flex items-center p-4 border-gray-300 rounded-lg shadow-sm bg-white"
+              className="flex items-center p-4  rounded-lg shadow-sm bg-white"
             >
               <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-lg overflow-hidden">
                 <Image
@@ -139,7 +139,7 @@ const Your = () => {
           ))}
         </div>
 
-        <div className="w-full lg:w-1/3 p-6 bg-gray-50 rounded-lg shadow-md h-fit">
+        <div className="w-full lg:w-1/3 p-6 bg-gray-50 border border-gray-200 rounded-lg shadow-md h-fit">
           <h2 className="font-bold text-2xl mb-5">Order Summary</h2>
           <div className="space-y-4">
             <div className="flex justify-between">

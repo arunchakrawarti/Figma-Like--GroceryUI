@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <div>
       <Top/>
-      <Navbar/>
+      
       <Photo/>
       <Photo1/>
       <Heading/>
       <Selling/>
       <Browser/>
       <Our/>
-      <Stay/>
+      
     </div>
   );
 }

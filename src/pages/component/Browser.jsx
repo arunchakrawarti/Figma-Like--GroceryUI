@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Browser = () => {
   return (
-    <div className='h-auto mt-20 p-5 md:p-10 rounded-[4rem] mx-5 md:mx-28 bg-[#F0F0F0]'>
+    <div className='h-auto mt-30 p-5 md:p-10 rounded-[4rem] mx-5 md:mx-28 bg-[#F0F0F0]'>
       <h1 className='font-extrabold text-center text-3xl md:text-5xl pt-10 md:pt-15'>
         BROWSE BY DRESS STYLE
       </h1>

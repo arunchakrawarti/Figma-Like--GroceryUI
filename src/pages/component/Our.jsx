@@ -16,7 +16,7 @@ const customers = [
     ),
     name: "Satah M.",
     review:
-      "I'm blown away by the quality and style style used to be a of the clothes I received from Shop.co...",
+      "I'm blown away by the quality and style style used to be a of the clothes lookout for unique fashion pieces I received from Shop.co...",
   },
   {
     star: (
@@ -30,7 +30,7 @@ const customers = [
     ),
     name: "Alex K.",
     review:
-      "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co...",
+      "Finding clothes that align with my personal style lookout for unique fashion pieces used to be a challenge until I discovered Shop.co...",
   },
   {
     star: (
@@ -44,7 +44,7 @@ const customers = [
     ),
     name: "Mohan k.",
     review:
-      "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co...",
+      "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have lookout for unique fashion pieces stumbled upon Shop.co...",
   },
   {
     star: (
@@ -58,7 +58,7 @@ const customers = [
     ),
     name: "Umesh l.",
     review:
-      "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co...",
+      "As someone who's always on the lookout for lookout for unique fashion pieces unique fashion pieces, I'm thrilled to have stumbled upon Shop.co...",
   },
   {
     star: (
@@ -72,7 +72,7 @@ const customers = [
     ),
     name: "David W.",
     review:
-      "Fantastic experience with Shop.co. The delivery was fast, and the clothes were exactly as described...",
+      "Fantastic experience with Shop.co. The delivery lookout for unique fashion pieces was fast, and the clothes were exactly as described...",
   },
 ];
 
@@ -90,13 +90,13 @@ const Our = () => {
   };
 
   return (
-    <section className="bg-white py-12 px-6 lg:px-20 relative">
+    <section className="bg-white py-12 px-6 lg:px-20 mt-10  relative">
       {/* Heading */}
-      <div className="flex justify-between items-center mb-8">
-        <h2 className="text-4xl font-extrabold text-black">
+      <div className="flex  justify-between ml-5 items-center mb-8">
+        <h2 className="text-4xl font-extrabold  text-black">
           OUR HAPPY CUSTOMERS
         </h2>
-        <div className="flex space-x-4">
+        <div className="flex space-x-6 mr-5">
           <button
             onClick={() => scroll("left")}
             className="p-3 rounded-full bg-gray-200 hover:bg-gray-300"
@@ -112,24 +112,27 @@ const Our = () => {
         </div>
       </div>
 
-     
-      <div
-        ref={scrollRef}
-        className="flex flex-row gap-2 overflow-x-auto scroll-smooth hide-scrollbar"
-      >
-        {customers.map((item, i) => (
-          <div
-            key={i}
-            className="flex-shrink-0 w-[90%] sm:w-[300px] md:w-[300px]"
-          >
-            <CustomerCard
-              star={item.star}
-              name={item.name}
-              review={item.review}
-            />
-          </div>
-        ))}
-      </div>
+<div
+  ref={scrollRef}
+  className="flex flex-row gap-6 overflow-x-auto scroll-smooth hide-scrollbar px-2"
+>
+  {customers.map((item, i) => (
+    <div
+      key={i}
+      className="flex-shrink-0"
+    >
+      <CustomerCard
+        star={item.star}
+        name={item.name}
+        review={item.review}
+      />
+    </div>
+  ))}
+</div>
+
+
+
+
 
      
       <div className="absolute top-0 left-0 h-full w-16 bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none"></div>
